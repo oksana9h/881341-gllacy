@@ -9,6 +9,7 @@
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo">
+<!-- См. Техническое задание пункт 3.2. Логотип не является пунктом меню. Его нужно размечать отдельным элементом. Это значит, что его нужно вынести из состава тега nav. Тег nav предназначен для ОСНОВНОЙ навигации по сайту. Логотип такой не является -->
             <img src="img/index-logo.svg" width="111" height="24" alt="Логотип магазина мороженого «Gllacy Shop»">
             <!-- реальные размеры всех картинок и правильные адреса укажу позже-->
           </a>
@@ -18,11 +19,14 @@
             <li><a href="about-company.html">О Компании</a></li>
           </ul>
           <ul class="user-navigation">
+<!-- Блок пользователя также не является основной навигацией по сайту. Поэтому его тоже нужно вынести за приделы навигации -->
             <li class="search">Поиск</li>
             <li class="login-link">Вход</li>
             <li class="busket"><a href="busket.html">Пусто</a></li>
+<!-- Поиск, вход, корзина должны быть ссылками. Так как, согласно макету, это интерактивные элементы. При наведении на них всплывают соответствующие модальные окна -->
           </ul>
         </nav>
+<!-- Нет времени работы и телефона -->
       </header>
 
       <main class="container">
@@ -53,11 +57,13 @@
             <span class="button subscription-button">Отправить</span>
           </section>
 
-          <-- здесь будет карта-->
+          <!-- здесь будет карта-->
         </main>
 
         <footer class="main-footer">
           <div class="footer-social">
+<!-- Для чего тут div? Есть смысл class="footer-social" присвоить для списка, а div удалить вовсе  -->
+
         <ul>
           <li><a class="social-button" href="#">Твиттер</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -79,6 +85,8 @@
 
       <p class="footer-copyright">
         <b>Сделано в <u>HTML Academy</u> © 2017</b>
+<!-- Тег b тут не уместен. Достаточно оставить только абзац -->
+<!-- тег u так же не уместен. Это должна быть ссылка. См. ТехЗадание пункт 3.7. Логотип Академии и ссылка HTML Academy в подвале ведут на лендинг интенсива «Профессиональный HTML и CSS, уровень 1». -->
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
