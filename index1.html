@@ -13,15 +13,41 @@
           </a>
         <nav class="main-navigation">          
           <ul class="site-navigation">
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a>        
+              <h3>Новинки</h3>
+                <ul class="new-items">
+                  <li> <a href="gllacy-catalog.psd">Сливочное</a></li>
+                  <li> <a href="sherbets.html">Щербеты</a></li>
+                  <li> <a href="fruit-ice.html">Фруктовый лед</a></li>
+                  <li> <a href="melorin.html">Мелорин</a></li>
+                  </ul>
+                </li>
             <li><a href="delivery.html">Доставка и оплата</a></li>
             <li><a href="about-company.html">О Компании</a></li>
           </ul>
         </nav>
           </ul>
           <ul class="user-navigation">
-            <li class="search"><a href="search.html">Поиск</li>
-            <li class="login-link"><a href="login-link.html">Вход</li>
+            <label><li class="search"><a href="search.html">Поиск</a>
+              <input type="search" name="search" placeholder="Что ищем?">
+            </li>
+          </label>
+           <li class="login-link"><a href="login-link.html">Вход</a>
+            <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+              <fieldset class="form-enter"> 
+                <legend class="visually-hidden">Вход в личный кабинет</legend>
+                <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Электронная почта">
+              <label for="password">Пароль</label>
+              <input type="password" id="password" name="password" placeholder="Пароль">
+              <button type="submit" class="enter">Войти</button>
+              <ul class="registration">
+                <li><a href="forget.html">Забыли пароль</a></li>
+                li><a href="new-registration">Новая регистрация</a></li>
+              </ul>
+            </fieldset>
+          </form>
+        </li>           
             <li class="busket"><a href="busket.html">Пусто</a></li>
 <!-- Поиск, вход, корзина должны быть ссылками. Так как, согласно макету, это интерактивные элементы. При наведении на них всплывают соответствующие модальные окна -->
           </ul>
