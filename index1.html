@@ -14,12 +14,12 @@
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li><a href="catalog.html">Каталог</a>
-              <h3>Новинки</h3>
+              
 <!-- Заголовок тут не нужен -->
                 <ul class="new-items">
-                  <li> <a href="gllacy-catalog.psd">Сливочное</a></li>
+                  <li>Новинки</li>
+                  <li> <a href="inner.html">Сливочное</a></li>
 <!-- "Сливочное" это ссылка на вторую страницу. У тебя она называется inner.html -->
-
                   <li> <a href="sherbets.html">Щербеты</a></li>
                   <li> <a href="fruit-ice.html">Фруктовый лед</a></li>
                   <li> <a href="melorin.html">Мелорин</a></li>
@@ -29,19 +29,17 @@
             <li><a href="delivery.html">Доставка и оплата</a></li>
             <li><a href="about-company.html">О Компании</a></li>
           </ul>
-        </nav>
-
-          </ul>
+        </nav>          
 <!-- Этот </ul> лишний -->
-
-
           <ul class="user-navigation">
 <!-- У ul дочерним может быть только li. А в li уже можешь вкладывать все что угодно -->
-            <label><li class="search"><a href="search.html">Поиск</a>
+            <li class="search">
+              <a href="search.html">Поиск</a>
+              <form action=https://echo.htmlacademy.ru" method="post">
               <input type="search" name="search" placeholder="Что ищем?">
 <!-- input и label без form не могут существовать -->
-            </li>
-          </label>
+            </form>
+            </li>          
 
 <!-- вижу, что ты запутался с поиском. Вот тебе разметка для примера.-->
 <!-- <ul class="user-navigation">
@@ -57,13 +55,11 @@
             <form class="filter" method="post" action="https://echo.htmlacademy.ru">
               <fieldset class="form-enter">
                 <legend class="visually-hidden">Вход в личный кабинет</legend>
-                <label for="email">Email</label>
+                
 <!-- Можно обойтись без label -->
 
-              <input type="text" id="email" name="email" placeholder="Электронная почта">
-<!-- Для поля ввода почты нужно указывать type="email" -->
-
-              <label for="password">Пароль</label>
+              <input type="email" id="email" name="email" placeholder="Электронная почта">
+<!-- Для поля ввода почты нужно указывать type="email" -->             
 <!-- Можно обойтись без label -->
 
               <input type="password" id="password" name="password" placeholder="Пароль">
@@ -144,6 +140,16 @@
     </footer>
 
 <!-- Здесь должна размещаться разметка модального окна обратной связи -->
+    <section class="modal-form">
+      <h3 class="visually-hidden">Форма обратной связи</h3>
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <input type="checkbox" name="checkbox" id="checkbox-field">
+        <input type="text" id="name" name="name" placeholder="Как вас зовут?">
+         <input type="text" id="answer" name="answer" placeholder="Ваша почта для ответа">          
+          <textarea name="message" placeholder="Напишите что-нибудm"></textarea>
+        </form>
+        <button type="submit" class="send">Отправить</button>
+    </section>
 
   </body>
 </html>
