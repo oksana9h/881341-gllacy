@@ -16,7 +16,8 @@
             <li><a href="catalog.html">Каталог</a>
               
 <!-- Заголовок тут не нужен -->
-                <ul class="new-items">
+                <div> <p>Новинки</p>
+                  <ul class="new-items">
                   <li>Новинки</li>
                   <li> <a href="inner.html">Сливочное</a></li>
 <!-- "Сливочное" это ссылка на вторую страницу. У тебя она называется inner.html -->
@@ -24,6 +25,7 @@
                   <li> <a href="fruit-ice.html">Фруктовый лед</a></li>
                   <li> <a href="melorin.html">Мелорин</a></li>
                   </ul>
+                </div>
 <!-- Я что-то не пойму - в скайпе у меня спрашиваешь про этот пункт, описываешь какие-то кнопки, филдсеты и прочую дичь. А тут все делаешь верно -->
                 </li>
             <li><a href="delivery.html">Доставка и оплата</a></li>
@@ -34,7 +36,7 @@
           <ul class="user-navigation">
 <!-- У ul дочерним может быть только li. А в li уже можешь вкладывать все что угодно -->
             <li class="search">
-              <a href="search.html">Поиск</a>
+              <a href="search.html"><span class="visually-hidden">Поиск</span></a>
               <form action=https://echo.htmlacademy.ru" method="post">
               <input type="search" name="search" placeholder="Что ищем?">
 <!-- input и label без form не могут существовать -->
@@ -52,10 +54,7 @@
   </li>
 </ul> -->
            <li class="login-link"><a href="login-link.html">Вход</a>
-            <form class="filter" method="post" action="https://echo.htmlacademy.ru">
-              <fieldset class="form-enter">
-                <legend class="visually-hidden">Вход в личный кабинет</legend>
-                
+            <form class="filter" method="post" action="https://echo.htmlacademy.ru">                              
 <!-- Можно обойтись без label -->
 
               <input type="email" id="email" name="email" placeholder="Электронная почта">
@@ -67,11 +66,10 @@
               <ul class="registration">
                 <li><a href="forget.html">Забыли пароль</a></li>
                 <li><a href="new-registration.html">Новая регистрация</a></li>
-              </ul>
-            </fieldset>
+              </ul>            
           </form>
         </li>
-            <li class="busket"><a href="busket.html">Пусто</a></li>
+            <li class="busket"><a href="busket.html">Пусто<span class="visually-hidden">Корзина</span></a></li>
 <!-- Поиск, вход, корзина должны быть ссылками. Так как, согласно макету, это интерактивные элементы. При наведении на них всплывают соответствующие модальные окна -->
           </ul>
           <div class="work-time">
@@ -142,13 +140,14 @@
 <!-- Здесь должна размещаться разметка модального окна обратной связи -->
     <section class="modal-form">
       <h3 class="visually-hidden">Форма обратной связи</h3>
-      <form method="post" action="https://echo.htmlacademy.ru">
-        <input type="checkbox" name="checkbox" id="checkbox-field">
+      <form method="post" action="https://echo.htmlacademy.ru">        
         <input type="text" id="name" name="name" placeholder="Как вас зовут?">
-         <input type="text" id="answer" name="answer" placeholder="Ваша почта для ответа">          
-          <textarea name="message" placeholder="Напишите что-нибудm"></textarea>
-        </form>
+         <input type="email" id="answer" name="email" placeholder="Ваша почта для ответа" required>          
+          <textarea name="message" placeholder="Напишите что-нибудь"></textarea>
         <button type="submit" class="send">Отправить</button>
+        </form>
+        <button type="button" aria-label="Закрыть окно">          
+        </button>
     </section>
 
   </body>
