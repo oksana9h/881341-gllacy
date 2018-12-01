@@ -22,23 +22,28 @@
             <li class="search">Поиск</li>
             <li class="login-link">Вход</li>
             <li class="busket">
-              <a href="busket.html">2 товара</a>
-<!-- Тут должно быть модальное окно с товарами. Не понял как здесь окно прописать-->
-      
-      <section class="purchases">
-        <form method="post" action="https://echo.htmlacademy.ru" oninput="price-1=">
-        <ul>
-        <li>
-        <button type="button" aria-label="Закрыть окно">
-        <img src="img/product-13.png" width="20" height="16" alt="Пломбир с апельсиновым джемом"> 
-        <input type="text"  name=" ">Пломбир с аплеьсиновым джемом
-        <output name="price-1">1,5кг х 200 руб</output>
-        <output name="price-2">300 руб</output>
-        </li>
-        </ul>
-
-
-
+              <a href="busket.html">2 товара</a>  
+              <!-- возможно секшион здесь будет лучше-->
+              <div class="shoping">
+              <table>
+    <caption>Выбранные товары</caption>
+    <tr>   
+        <td><button type="button" aria-label="Закрыть окно"></button></td>
+        <td><img src="img/product-13.png" width="20" height="16" alt="Пломбир с апельсиновым джемом"></td>
+        <td colspan=" ">Пломбир с апельсиновым джемом</td>
+        <td colspan=" ">1,5 кг х 200 руб.</td>
+        <td colspan=" ">300 руб.</td>
+        </tr>
+        <td><button type="button" aria-label="Закрыть окно"></button></td>
+        <td><img src="img/product-14.png" width="20" height="16" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+        <td colspan=" ">Клубничный пломбир с присыпкой из белого шоколада</td>
+        <td colspan=" ">1,5 кг х 300 руб.</td>
+        <td colspan=" ">450 руб.</td>
+        </tr>
+      </table>
+      <p>Итого: 750руб.</p>
+       <a href="shoping.html">Оформить заказ</a>
+     </div>      
             </li>
           </ul>
         <div class="work-time">
